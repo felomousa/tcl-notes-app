@@ -15,7 +15,7 @@ db eval {
 }
 
 ## ui setup
-wm title . "tcl note manager"
+wm title . "benji's burner phone"
 frame .left; frame .right
 pack .left .right -side left -fill both -expand 1 -padx 5 -pady 5
 
@@ -61,7 +61,7 @@ proc loadNote {} {
 
 # create a new note
 proc newNote {} {
-    set title [tk_getSaveFile -title "new note title"]
+    set title [tk_getSaveFile -title "new plug who dis"]
     if {$title eq ""} return
     db eval "INSERT INTO notes(title,body) VALUES('$title','')"
     loadNotes ""
